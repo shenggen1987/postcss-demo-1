@@ -12,6 +12,6 @@ module.exports = {
     ]
   },
   postcss: function () {
-    return [require('postcss-import')];
+    return [require('postcss-simple-vars')];
   }
 }

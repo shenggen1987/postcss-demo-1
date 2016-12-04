@@ -1,1 +1,14 @@
-@import "css/header.css";
+$primaryBack: #0047AB;
+$primaryText: #FFF;
+
+body {
+  font-family: Monaco;
+  margin: 0;
+}
+
+.header {
+  background-color: $primaryBack;
+  color: $primaryText;
+  padding: 20px;
+  font-size: 1.5em;
+}
