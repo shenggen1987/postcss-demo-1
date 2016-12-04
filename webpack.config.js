@@ -18,7 +18,8 @@ module.exports = {
   postcss: function () {
     return [
       require('postcss-simple-vars'),
-      require('postcss-simple-extend')
+      require('postcss-nested'),
+      require('postcss-simple-extend'),
     ];
   }
 }

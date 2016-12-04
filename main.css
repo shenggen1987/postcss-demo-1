@@ -19,14 +19,14 @@ body {
   padding: 20px;
   border: 2px solid $primaryBackColor;
   background-color: $contentBackColor;
-}
 
-.row::after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+  &::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
 }
 
 @define-placeholder col {
@@ -58,29 +58,29 @@ body {
 
 .col-fast {
   @extend col;
-}
 
-.col-fast::before {
-  @extend col-before;
-  background-image: url('images/fast.jpg');
+  &::before {
+    @extend col-before;
+    background-image: url('images/fast.jpg');
+  }
 }
 
 .col-modular {
   @extend col;
-}
 
-.col-modular::before {
-  @extend col-before;
-  background-image: url('images/modular.jpg');
+  &::before {
+    @extend col-before;
+    background-image: url('images/modular.jpg');
+  }
 }
 
 .col-flexible {
   @extend col;
-}
 
-.col-flexible::before {
-  @extend col-before;
-  background-image: url('images/flexible.jpg');
+  &::before {
+    @extend col-before;
+    background-image: url('images/flexible.jpg');
+  }
 }
 
 .footer {
