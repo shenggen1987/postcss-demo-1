@@ -8,10 +8,17 @@ module.exports = {
       {
         test:   /\.css$/,
         loader: "style-loader!css-loader!postcss-loader"
+      },
+      {
+        test: /\.(jpg)$/,
+        loader: "url-loader"
       }
     ]
   },
   postcss: function () {
-    return [require('postcss-simple-vars')];
+    return [
+      require('postcss-simple-vars'),
+      require('postcss-simple-extend')
+    ];
   }
 }
