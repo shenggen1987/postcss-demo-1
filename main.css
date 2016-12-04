@@ -1,5 +1,5 @@
-$primaryBack: #0047AB;
-$primaryText: #FFF;
+$primaryBackColor: #0047AB;
+$primaryTextColor: #FFF;
 
 body {
   font-family: Monaco;
@@ -8,20 +8,20 @@ body {
 }
 
 .header {
-  background-color: $primaryBack;
-  color: $primaryText;
+  background-color: $primaryBackColor;
+  color: $primaryTextColor;
   padding: 20px;
   font-size: 1.5em;
 }
 
 .row {
   padding: 20px;
-  border: 2px solid $primaryBack;
+  border: 2px solid $primaryBackColor;
 }
 
 .footer {
-  background-color: $primaryBack;
-  color: $primaryText;
+  background-color: $primaryBackColor;
+  color: $primaryTextColor;
   padding: 20px;
   font-size: 0.8em;
   text-align: right;
