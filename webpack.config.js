@@ -1,4 +1,8 @@
 module.exports = {
+  entry: './index.js',
+  output: {
+    filename: 'main.js'
+  },
   module: {
     loaders: [
       {
@@ -8,6 +12,6 @@ module.exports = {
     ]
   },
   postcss: function () {
-    return [];
+    return [require('postcss-import')];
   }
 }
