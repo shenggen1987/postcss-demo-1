@@ -3,7 +3,8 @@ $primaryText: #FFF;
 
 body {
   font-family: Monaco;
-  margin: 0;
+  width: 640px;
+  margin: auto;
 }
 
 .header {
@@ -11,6 +12,11 @@ body {
   color: $primaryText;
   padding: 20px;
   font-size: 1.5em;
+}
+
+.row {
+  padding: 20px;
+  border: 2px solid $primaryBack;
 }
 
 .footer {
